@@ -1,0 +1,18 @@
+
+Descrição da pimeira tarefa:
+
+Para fazer o script, primeiro é necessario sinalizar qual interpretador
+será usado para executar o script, com o comentário '#!bin/bash'
+
+Depois, para fazer as ações especificadas, foi atribuido à variavel 'data'
+a saida do comando 'date' com data=$(date). $ pega o conteudo do que
+vier depois e () executa o comando.
+
+'Echo "$1"' exibe o primeiro parâmetro passado, mas com a adicao do operador
+'>>', o que seria exibido no terminal é "jogado" para o caminho ~/notes,
+ou seja, é adicionado uma string ao arquivo notes. A mesma logica serve para 
+a data.
+
+Para criar o softlink do script notes.sh e fazer com que ele fique 
+visivel em todo sistema, foi necessário criar o link para notes.sh em
+um dos diretórios que a variavel de ambiente PATH guarda.
