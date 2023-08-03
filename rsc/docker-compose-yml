@@ -1,0 +1,17 @@
+version: '3'
+services: 
+
+  auv_ws: 
+    container_name: auv_ws
+    image: ghcr.io/ufrj-nautilus/auv_ws:master
+    privileged: true
+    pull_policy: always
+    environment:
+      - DISPLAY=${DISPLAY} 
+    volumes: 
+      - /home/pedro_rocha/ps_naut/src/:/root/catkin_ws/src
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /etc/localtime:/etc/localtime
+    network_mode: host
+    stdin_open: true
+    tty: true
