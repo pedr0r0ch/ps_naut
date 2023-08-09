@@ -1,0 +1,11 @@
+
+debug_mode: false
+
+Earth:
+  orbit: 5
+
+Moon:
+  orbit: 1
+
+Mars:
+  orbit: 4
